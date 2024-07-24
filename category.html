@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Store</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+    /* Đặt margin tự động cho phần tử để căn giữa */
+    footer {
+        text-align: center; /* Căn giữa nội dung bên trong footer */
+        padding: 10px; /* Thêm khoảng cách bên trong footer nếu cần */
+    }
+    .footer__container {
+        width: 100%;
+    }
+    .col-sm-12 {
+        text-align: center; /* Căn giữa nội dung bên trong footer */
+    }
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="ecommerce.html">PhongNguyen Routine</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="ecommerce.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="badge pull-right">4</span><i 
+           class="glyphicon glyphicon-shopping-cart"></i></a></li>
+            <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+            </ul>
+
+        <!-- Modal -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+ aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span 
+ class="sr-only">Close</span></button>
+  <h2 class="modal-title" id="myModalLabel">Sign in</h2>
+  </div>
+  <div class="modal-body">
+  <form class="form-signin" role="form">
+  <h3 class="form-signin-heading">Sign in with your email 
+ address</h3>
+  <div class="form-group">
+  <input type="email" class="form-control" 
+ placeholder="Email address" required autofocus>
+  </div>
+  <div class="form-group">
+  <input type="password" class="form-control" 
+ placeholder="Password" required>
+  </div>
+  <div class="checkbox">
+  <label>
+  <input type="checkbox" value="remember-me"> Remember 
+ me
+  </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" 
+ type="submit">Sign in</button>
+  </form>
+  </div>
+  <div class="row">
+  <div class="col-xs-3">
+  <a href="#" class="btn btn-facebook btn-large btn-caps 
+ btn-block">Facebook <span class="icon-facebook"></span></a>
+  </div>
+  <div class="col-xs-3">
+  <a href="" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+  </div>
+  <div class="col-xs-3">
+    <a href="" class="btn btn-lg btn-caps btn-block"><span 
+        class="icon-dribbble"></span></a>
+         </div>
+         </div>
+         <div class="modal-footer">
+         </div>
+         </div>
+         </div>
+         </div>
+    
+      </div>
+    </div>
+  </nav>
+
+    <div class="row">
+      <div class="col-md-3">
+        <p class="lead">Shop Name</p>
+        <div class="list-group">
+          <a href="category.html" class="list-group-item">Category 1</a>
+          <a href="category.html" class="list-group-item">Category 2</a>
+          <a href="category.html" class="list-group-item">Category 3</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/a/o/ao-so-mi-nam-dai-tay-05-10f24shl005_blue_1__1_1_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#"> Product 1</a></h4>
+                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp</a>.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">15 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/a/o/ao-so-mi-27-10s24shs002c_green_1__1_1_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$64.99</h4>
+                <h4><a href="#"> Product 2</a></h4>
+                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">12 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/amoptmobile/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/a/o/ao-thun-ba-lo-nam-27-10s24tto001_b_green_6__2_1_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$74.99</h4>
+                <h4><a href="#"> Product 3</a></h4>
+                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">31 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-nu-27-10s24pcaw001_beige_1__2_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$94.99</h4>
+                <h4><a href="#">Product 4</a></h4>
+                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">97 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/a/o/ao-thun-nam-ngan-tay-22-10s24tss030p_cream-_1__1_1_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$48.99</h4>
+                <h4><a href="#"> Product 5</a></h4>
+                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">62 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-short-nam-22-10s24pks002_faded-denim-_1__1_1_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$30.99</h4>
+                <h4><a href="#">Product 6</a></h4>
+                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">42 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/v/a/vay-nu-19-10s24skiw001-blue-_1__2_1_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$50.99</h4>
+                <h4><a href="#"> Product 7</a></h4>
+                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">19 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <img src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nu-17-10s24dpaw003_d-grey-_1__1_1_jpg.webp" alt="">
+              <div class="caption">
+                <h4 class="pull-right">$70.99</h4>
+                <h4><a href="#">Product 8</a></h4>
+                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">121 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 center">
+    <ul class="pagination">
+    <li class="disabled"><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+    </ul>
+    </div>
+
+  <div class="footer__container">
+    <hr />
+    <!-- Footer -->
+    <footer>
+    <div class="row">
+    <div class="col-lg-12">
+    <p>Copyright &copy; <a href="ecommerce.html">PhongNguyen</a> 2024</p>
+    </div>
+    </div>
+    </footer>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
